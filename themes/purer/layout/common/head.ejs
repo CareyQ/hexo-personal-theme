@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <title>
+        <%- page_title() %>
+    </title>
+
+    <%- fragment_cache('site-metas', ()=> {
+        let html = '';
+        if (theme.site.favicon) {
+            html += `<link rel="icon" href="${theme.site.favicon}" type="image/x-icon">`
+        }
+        if (theme.site.site_verification) {
+            const v = theme.site.site_verification
+            if (v.google) {
+                html += `<meta name="google-site-verification" content="${v.google}">`
+            }
+            if (v.baidu) {
+                html += `<meta name="baidu-site-verification" content="${v.baidu}">`
+            }
+        }
+        return html;
+    }) %>
+
+    <% if (!is_home() && !is_category() && !is_tag() && !is_archive() && page.comments) { %>
+    <% if (theme.comment.type==='gitalk' ) { %>
+    <link href="<%= theme.cdn.gitalk %>" rel="stylesheet">
+    <% } %>
+    <% if (theme.fancybox) { %>
+    <link href="<%= theme.cdn.lightgallery_css %>" rel="stylesheet">
+    <% } %>
+    <% } %>
+
+    <%- css('https://at.alicdn.com/t/font_2923051_4xp7rp6urvb.css') %>
+    <%- css('/css/common.css') %>
+
+    <% if(theme.site.google_analytics) { %>
+    <script>
+        (function(e, t, n, i, s, a, c) {
+            e[n] = e[n] || function() {
+                (e[n].q = e[n].q || []).push(arguments)
+            };
+            a = t.createElement(i);
+            c = t.getElementsByTagName(i)[0];
+            a.async = true;
+            a.src = s;
+            c.parentNode.insertBefore(a, c)
+        })(window, document, "galite", "script", "https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
+
+        galite('create', '<%= theme.site.google_analytics %>', 'auto');
+        galite('send', 'pageview');
+    </script>
+    <% } %>
+</head>

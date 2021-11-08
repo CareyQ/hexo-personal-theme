@@ -1,0 +1,36 @@
+site:
+  site_verification:
+
+menu:
+  Home: .
+  Archives: archives
+  Tags: tags
+  Links: links
+  About: about
+
+menu_icons:
+  home: pure-home
+  archives: pure-archive
+  tags: pure-tags
+  links: pure-leaf
+  about: pure-cafe
+
+profile:
+  avatar: images/avatar.png
+  author: Carey Q
+  author_title: Code changes itself.
+  author_description: 个人简介。
+  location: Yunnan, China
+  follow: /
+  # Social Links
+  social:
+    links:
+      github: https://github.com/cofess
+      weibo: http://weibo.com/cofess
+      twitter: https://twitter.com/iwebued
+      behance: https://www.behance.net/cofess
+      rss: atom.xml
+    link_tooltip: true # enable the social link tooltip, options: true, false
+
+comment:
+  type:

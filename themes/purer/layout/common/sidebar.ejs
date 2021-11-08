@@ -1,0 +1,31 @@
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="sidebar-header">
+        <% let profile = theme.profile %>
+        <div class="sidebar-profile">
+            <a id="avatar" href="<%= profile.follow %>" target="_blank">
+                <img class="img-circle" src="<%= url_for(profile.avatar) %>" width="200" height="200">
+            </a>
+            <div class="profile-text">
+                <h2 class="author"><%= profile.author %></h2>
+                <p class="location">
+                    <img src="/images/icon/location.svg">
+                    <span><%= profile.location %></span>
+                </p>
+            </div>
+        </div>
+        <h3 class="author-title"><%= profile.author_title %></h3>
+    </div>
+
+    <nav class="sidebar-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="menu-list">
+            <% for (var i in theme.menu) { let itemName = i.toLowerCase(); %>
+            <li class="menu-item">
+                <a href="<%- url_for(theme.menu[i]) %>">
+                    <i class="iconfont <%= theme.menu_icons[itemName] %>"></i>
+                    <span class="menu-text"><%= __('menu.'+i) %></span>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+</aside>
