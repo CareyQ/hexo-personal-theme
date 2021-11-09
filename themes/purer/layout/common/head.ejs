@@ -29,15 +29,15 @@
     }) %>
 
     <% if (!is_home() && !is_category() && !is_tag() && !is_archive() && page.comments) { %>
-    <% if (theme.comment.type==='gitalk' ) { %>
-    <link href="<%= theme.cdn.gitalk %>" rel="stylesheet">
-    <% } %>
-    <% if (theme.fancybox) { %>
-    <link href="<%= theme.cdn.lightgallery_css %>" rel="stylesheet">
-    <% } %>
+        <% if (theme.comment.type==='gitalk' ) { %>
+            <link href="<%= theme.cdn.gitalk %>" rel="stylesheet">
+        <% } %>
+        <% if (theme.fancybox) { %>
+            <link href="<%= theme.cdn.lightgallery_css %>" rel="stylesheet">
+        <% } %>
     <% } %>
 
-    <%- css('https://at.alicdn.com/t/font_2923051_4xp7rp6urvb.css') %>
+    <%- css('https://at.alicdn.com/t/font_2923051_n8f899tpros.css') %>
     <%- css('/css/common.css') %>
 
     <% if(theme.site.google_analytics) { %>

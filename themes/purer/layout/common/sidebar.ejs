@@ -28,4 +28,13 @@
             <% } %>
         </ul>
     </nav>
+
+    <div class="sidebar-footer">
+        <div class="social-list">
+            <% let social = theme.profile.social; for (let i in social) { %>
+                <a href="<%- url_for(social[i]) %>" target="_blank" title="<%= titlecase(i) %>"><i class="iconfont pure-<%= i %>"></i></a>
+            <% } %>
+        </ul>
+        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer"><%= theme.site.beian %></a></p>
+    </div>
 </aside>

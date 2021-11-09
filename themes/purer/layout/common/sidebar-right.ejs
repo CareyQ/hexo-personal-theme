@@ -1,0 +1,21 @@
+<aside class="sidebar-right">
+    <div class="widget widget-categories">
+        <div class="widget-title">
+            <img src="/images/icon/category.svg" alt="分类">
+            <span>分类</span>
+        </div>
+        <div class="wdiget-content">
+            <%- list_categories({ show_count: true }) %>
+        </div>
+    </div>
+
+    <div class="widget widget-tag-cloud">
+        <div class="widget-title">
+            <img src="/images/icon/tag-cloud.svg" alt="标签云">
+            <span>标签云</span>
+        </div>
+        <div class="wdiget-content">
+            <%- tagcloud() %>
+        </div>
+    </div>
+</aside>

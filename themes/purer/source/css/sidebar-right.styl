@@ -1,0 +1,49 @@
+.sidebar-right
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    width: 18%
+    padding: 40px 32px 32px
+    overflow-x: hidden
+    overflow-y: auto
+    background-color: #fdfdfd
+    border-left: 1px solid #f6f6f6
+
+.widget
+    margin-bottom: 20px
+
+.widget-title
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    img
+        width: 24px
+        height: 24px
+        margin-right: 10px
+    span
+        font-size: 18px
+        font-weight: 600
+
+.wdiget-content
+    ul
+        padding-left: 26px
+    li
+        line-height: 1.8
+        span
+            margin-left: 6px
+            color: #999
+            &:before
+                content: "("
+            &:after
+                content: ")"
+
+.widget-tag-cloud .wdiget-content
+    padding-top: 6px
+    a
+        display: inline-block
+        margin-right: 3px
+        margin-bottom: 2px
+        padding: 2px 6px
+        background-color: #eee
+        border-radius: 3px

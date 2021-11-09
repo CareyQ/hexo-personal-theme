@@ -1,0 +1,13 @@
+<% if (page.total > 1){ %>
+<nav class="pagination">
+    <div class="pagination-left">
+        <a class="prev <% if (!page.prev) { %>disabled<% } %>" href="<%- url_for(page.prev_link) %>">
+            <i class="iconfont pure-left"></i> <%= __('pagination.prev') %>
+        </a>
+        <a class="next <% if (!page.next) { %>disabled<% } %>" href="<%- url_for(page.next_link) %>">
+            <%= __('pagination.next') %> <i class="iconfont pure-right"></i>
+        </a>
+    </div>
+    <div class="total-article"><%= _p('pagination.page', page.current, page.total) %></div>
+</nav>
+<% } %>

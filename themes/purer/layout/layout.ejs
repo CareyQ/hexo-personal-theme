@@ -2,9 +2,10 @@
 <html <% if(config.language) { %> lang="<%- config.language %>" <% } %>>
     <%- partial('common/head') %>
     <body itemscope itemtype="http://schema.org/WebPage">
-        <%- partial('common/sidebar', null, {cache: !config.relative_link}) %>
-        <section class="main-section">
+        <%- partial('common/sidebar', null, { cache: !config.relative_link }) %>
+        <main class="main-section" role="main">
             <%- body %>
+            <%- partial('common/sidebar-right', null, { cache: !config.relative_link }) %>
         </section>
     </body>
 </html>
