@@ -1,0 +1,15 @@
+<nav class="article-nav">
+    <div class="article-nav-inner">
+        <% if (page.prev) { %>
+            <a href="<%- url_for(page.prev.path) %>" title="<%= page.prev.title || '(no title)' %>"><i class="iconfont pure-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+        <% } else { %>
+            <a href="javscripts:;""><i class="iconfont pure-left" aria-hidden="true"></i><span>&nbsp;&nbsp;无</span></a>
+        <% } %>
+
+        <% if (page.next){ %>
+            <a href="<%- url_for(page.next.path) %>" title="<%= page.next.title || '(no title)' %>"><span>下一篇&nbsp;&nbsp;</span><i class="iconfont pure-right" aria-hidden="true"></i></a>
+        <% } else { %>
+            <a href="javscripts:;""><i class="iconfont pure-right" aria-hidden="true"></i><span>&nbsp;&nbsp;无</span></a>
+        <% } %>
+    </div>
+</nav>

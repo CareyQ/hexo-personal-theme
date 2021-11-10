@@ -1,0 +1,10 @@
+<div class="page-header">
+    <h1 itemprop="title"><img src="/images/icon/category.svg" alt="<%= page.category %>"><%= '分类：' + page.category %></h1>
+    <p><%= _p('total.article', page.posts.length) %></p>
+</div>
+
+<div class="page-content">
+    <% page.posts.each(post => { %>
+        <%- partial('common/item-post', { post: post }) %>
+    <% }) %>
+</div>

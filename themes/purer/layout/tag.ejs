@@ -1,0 +1,18 @@
+<div class="page-header">
+    <h1 itemprop="title"><%= __('page.tag') + '：' + page.tag %></h1>
+    <p><%= _p('total.article', page.posts.length) %></p>
+    <nav role="navigation" class="tag-nav">
+        <ul>
+            <li><a href="<%= config.root %>tags">所有标签</a></li>
+            <% site.tags.each(function(item){ %>
+                <li><a href="<%= config.root %><%= item.path %>"><%= item.name %></a></li>
+            <% }) %>
+        </ul>
+    </nav>
+</div>
+
+<div class="page-content">
+    <% page.posts.each(post => { %>
+        <%- partial('common/item-post', { post: post }) %>
+    <% }) %>
+</div>

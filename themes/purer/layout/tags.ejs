@@ -1,0 +1,28 @@
+<div class="page-header">
+    <h1 itemprop="title"><img src="/images/icon/tags.svg" alt="<%= page.title %>"><%= page.title %></h1>
+    <p><%= _p('total.tag', site.tags.length) %></p>
+    <nav role="navigation" class="tag-nav">
+        <ul>
+            <li><a href="<%= config.root %>tags">所有标签</a></li>
+            <% site.tags.each(function(item){ %>
+                <li><a href="<%= config.root %><%= item.path %>"><%= item.name %></a></li>
+            <% }) %>
+        </ul>
+    </nav>
+</div>
+
+<div class="page-content">
+    <% site.tags.each(function(item){ %>
+        <h3 class="panel-title">
+            <a href="<%- url_for(item.path) %>" title="#<%= item.name %>">
+                <i class="iconfont pure-tag"></i> <%= item.name %>
+            </a>
+            <small class="text-muted">(Total <%= item.posts.length %> articles)</small>
+        </h3>
+        <div class="tags-section">
+            <% item.posts.each(post => { %>
+                <%- partial('common/item-post', { post: post }) %>
+            <% }) %>
+        </div>
+    <% }) %>
+</div>

@@ -1,9 +1,11 @@
+@import './font.styl'
+
 *, *:before, *:after
     box-sizing: border-box
 
 html, body
     position: relative
-    overflow-x: hidden
+    scroll-behavior: smooth
 
 body
     margin: 0
@@ -41,6 +43,7 @@ ul, ol
 a
     color: inherit
     text-decoration: none
+
     &:hover
         color: #0969da
         text-decoration: underline
@@ -53,6 +56,7 @@ a
 .disabled
     cursor: not-allowed
     color: inherit
+
     &:hover
         color: inherit
         text-decoration: none
@@ -61,3 +65,5 @@ a
 @import './index.styl'
 @import './pagination.styl'
 @import './sidebar-right.styl'
+@import './page.styl'
+@import './article.styl'

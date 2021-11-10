@@ -1,0 +1,25 @@
+<div class="page-header">
+    <h1 itemprop="title"><img src="/images/icon/links.svg" alt="<%= page.title %>"><%= page.title %></h1>
+    <p><%= __('page.links-desc') %></p>
+</div>
+
+<div class="page-content link-page">
+    <% for (let index in site.data.links) { %>
+        <% let item = site.data.links[index]; %>
+        <div class="link-item">
+            <div class="link-left">
+                <a href="<%= item.url %>" target="_blank" class="link-url">
+                    <img src="<%= item.avatar %>" alt="<%= item.name %>">
+                </a>
+            </div>
+            <div class="link-body">
+                <h4 class="link-name">
+                    <a href="<%= item.link %>" target="_blank"><%= item.name %></a>
+                </h4>
+                <p class="text-muted"><% if (item.desc) { %><%= item.desc %><% } else { %>这个小伙伴有点东西...<% } %></p>
+            </div>
+        </div>
+    <% } %>
+</div>
+
+<%- partial('common/comment') %>

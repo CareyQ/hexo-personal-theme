@@ -1,21 +1,35 @@
 <aside class="sidebar-right">
+    <% if (is_post() && page.toc) { %>
+        <div class="widget widget-toc">
+            <div class="widget-title">
+                <img src="/images/icon/toc.svg" alt="文章目录">
+                <span>文章目录</span>
+            </div>
+            <div class="widget-content">
+                <%- toc(page.content) %>
+            </div>
+        </div>
+    <% } %>
+
     <div class="widget widget-categories">
         <div class="widget-title">
             <img src="/images/icon/category.svg" alt="分类">
             <span>分类</span>
         </div>
-        <div class="wdiget-content">
+        <div class="widget-content">
             <%- list_categories({ show_count: true }) %>
         </div>
     </div>
 
-    <div class="widget widget-tag-cloud">
-        <div class="widget-title">
-            <img src="/images/icon/tag-cloud.svg" alt="标签云">
-            <span>标签云</span>
+    <% if (site.tags.length) { %>
+        <div class="widget widget-tag-cloud">
+            <div class="widget-title">
+                <img src="/images/icon/tag-cloud.svg" alt="标签云">
+                <span>标签云</span>
+            </div>
+            <div class="widget-content">
+                <%- tagcloud() %>
+            </div>
         </div>
-        <div class="wdiget-content">
-            <%- tagcloud() %>
-        </div>
-    </div>
+    <% } %>
 </aside>

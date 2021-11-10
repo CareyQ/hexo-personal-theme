@@ -1,0 +1,10 @@
+<div class="page-header">
+    <h1 itemprop="title"><img src="/images/icon/about.svg" alt="<%= page.title %>"><%= page.title %></h1>
+    <p><%= page.desc %></p>
+</div>
+
+<div class="page-content markdown-body">
+    <%- page.content %>
+</div>
+
+<%- partial('common/comment') %>

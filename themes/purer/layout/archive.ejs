@@ -1,0 +1,41 @@
+<%
+    let title = page.title;
+    if (is_archive()){
+        title = __('page.archive');
+    if (is_month()){
+        title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+        title += ': ' + page.year;
+    }
+  }
+%>
+
+<div class="page-header">
+    <h1 itemprop="title"><img src="/images/icon/archive.svg" alt="<%= title %>"><%= title %></h1>
+    <p><%= _p('total.article', site.posts.length) %></p>
+</div>
+
+<div class="page-content">
+    <% let last; %>
+    <% site.posts.sort('date', 'desc').each(post => { %>
+        <% let year = post.date.year() %>
+            <% if (last != year) { %>
+                <% if (last != null) { %>
+                    </div></section>
+                <% } %>
+                <% last = year; %>
+                <section class="panel">
+                    <div class="panel-heading" role="tab">
+                        <h3 class="panel-title">
+                            <i class="iconfont pure-calendar"></i>
+                            <%= year %>
+                        </h3>
+                    </div>
+                    <div class="panel-collapse" role="tabpanel">
+            <% } %>
+            <%- partial('common/item-post', { post: post }) %>
+    <% }) %>
+    <% if (site.posts.length){ %>
+        </div></section>
+    <% } %>
+</div>

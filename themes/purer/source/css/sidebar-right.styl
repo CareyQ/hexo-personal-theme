@@ -9,6 +9,10 @@
     overflow-y: auto
     background-color: #fdfdfd
     border-left: 1px solid #f6f6f6
+    scrollbar-width: none
+    -ms-overflow-style: none
+    &::-webkit-scrollbar
+        display: none
 
 .widget
     margin-bottom: 20px
@@ -17,29 +21,37 @@
     display: flex
     align-items: center
     margin-bottom: 10px
+
     img
         width: 24px
         height: 24px
         margin-right: 10px
+
     span
         font-size: 18px
         font-weight: 600
 
-.wdiget-content
-    ul
-        padding-left: 26px
-    li
-        line-height: 1.8
-        span
+.widget-categories
+    li span
             margin-left: 6px
             color: #999
+
             &:before
-                content: "("
+                content: '('
+
             &:after
-                content: ")"
+                content: ')'
+
+.widget-content
+    ul
+        padding-left: 26px
+
+    li
+        line-height: 1.8
 
 .widget-tag-cloud .wdiget-content
     padding-top: 6px
+
     a
         display: inline-block
         margin-right: 3px
@@ -47,3 +59,10 @@
         padding: 2px 6px
         background-color: #eee
         border-radius: 3px
+
+.widget-toc
+    ol
+        list-style: none
+        padding-left: 8px
+        ol
+            padding-left: 26px

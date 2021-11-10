@@ -1,0 +1,16 @@
+<div class="article-list">
+    <% if (index) { %>
+    <% page.posts.forEach(function(post) { %>
+    <article class="article-item" itemscope itemtype="http://schema.org/BlogPosting">
+        <h2 class="item-title" itemprop="name">
+            <a class="title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        </h2>
+        <p class="item-meta">
+            <%- partial('common/post/date', { date_format: 'YYYY-MM-DD HH:ss:mm', post: post }) %>
+            <%- partial('common/post/category', { post: post }) %>
+            <%- partial('common/post/wordcount', { post: post }) %>
+        </p>
+    </article>
+    <% }) %>
+    <% } %>
+</div>
