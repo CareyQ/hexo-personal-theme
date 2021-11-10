@@ -9,6 +9,7 @@ menu:
   Tags: tags
   Links: links
   About: about
+  Site: site
 
 menu_icons:
   home: pure-home
@@ -16,6 +17,7 @@ menu_icons:
   tags: pure-tags
   links: pure-leaf
   about: pure-cafe
+  site: pure-flask
 
 profile:
   avatar: images/avatar.png
@@ -28,6 +30,21 @@ profile:
     github: https://github.com/CareyQ
     mail: mailto:careyq03@gmail.com
     rss: atom.xml
+  skills:
+    Java: ★★★★☆
+    Spring: ★★★☆☆
+    Git: ★★★☆☆
+    SQL: ★★★☆☆
+    Linux: ★★★☆☆
+    HTML + CSS: ★★★★☆
+    Javascript: ★★☆☆☆
+    Happy: ★★★★★
+
+  labels:
+    - Java 开发
+    - 折腾系
+    - 模拟游戏玩家
+    - 代码菜狗
 
 comment:
   type:

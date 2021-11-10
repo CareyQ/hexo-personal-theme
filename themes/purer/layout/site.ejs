@@ -1,0 +1,23 @@
+<div class="page-header">
+    <h1 itemprop="title"><img src="/images/icon/site.svg" alt="<%= page.title %>"><%= page.title %></h1>
+    <p><%= page.desc %></p>
+</div>
+
+<div class="page-content site-content">
+    <% for (let index in site.data.sites) { %>
+        <% let item = site.data.sites[index]; %>
+        <div class="site-item">
+            <div class="site-left">
+                <a href="<%= item.url %>" target="_blank" class="site-url">
+                    <img src="<%= item.logo %>" alt="<%= item.title %>">
+                </a>
+            </div>
+            <div class="site-body">
+                <h4 class="site-title">
+                    <a href="<%= item.url %>" target="_blank"><%= item.title %></a>
+                </h4>
+                <p class="text-muted"><%= item.desc %></p>
+            </div>
+        </div>
+    <% } %>
+</div>

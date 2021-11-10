@@ -1,4 +1,33 @@
 <aside class="sidebar-right">
+    <% if (page.type === 'about') { %>
+        <div class="widget widget-skill">
+            <div class="widget-title">
+                <img src="/images/icon/skill.svg" alt="技能">
+                <span>技能</span>
+            </div>
+            <div class="widget-content">
+                <% for(var i in theme.profile.skills) { %>
+                    <p class="skill-item">
+                        <span><%= i %></span>
+                        <span class="star"><%- theme.profile.skills[i] %></span>
+                    </p>
+                <% } %>
+            </div>
+        </div>
+
+        <div class="widget widget-label">
+            <div class="widget-title">
+                <img src="/images/icon/flag.svg" alt="个人标签">
+                <span>个人标签</span>
+            </div>
+            <div class="widget-content">
+                <% for(var i in theme.profile.labels) { %>
+                    <span class="label"><%- theme.profile.labels[i] %></span>
+                <% } %>
+            </div>
+        </div>
+    <% } %>
+
     <% if (is_post() && page.toc) { %>
         <div class="widget widget-toc">
             <div class="widget-title">

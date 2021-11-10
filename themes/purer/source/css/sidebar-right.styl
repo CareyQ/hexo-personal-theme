@@ -11,6 +11,7 @@
     border-left: 1px solid #f6f6f6
     scrollbar-width: none
     -ms-overflow-style: none
+
     &::-webkit-scrollbar
         display: none
 
@@ -33,14 +34,14 @@
 
 .widget-categories
     li span
-            margin-left: 6px
-            color: #999
+        margin-left: 6px
+        color: #999
 
-            &:before
-                content: '('
+        &:before
+            content: '('
 
-            &:after
-                content: ')'
+        &:after
+            content: ')'
 
 .widget-content
     ul
@@ -64,5 +65,26 @@
     ol
         list-style: none
         padding-left: 8px
+
         ol
             padding-left: 26px
+
+.skill-item
+    display: flex
+    justify-content: space-between
+    margin-bottom: 2px
+
+.star
+    font-size: 16px
+
+.label
+    display: inline-block
+    padding: 0.3em 0.6em
+    font-size: 75%
+    line-height: 1
+    color: #777
+    text-align: center
+    white-space: nowrap
+    vertical-align: baseline
+    border-radius: 0.25em
+    background-color: #eee
