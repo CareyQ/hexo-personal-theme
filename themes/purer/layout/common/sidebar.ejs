@@ -12,11 +12,14 @@
                     <span><%= profile.location %></span>
                 </p>
             </div>
+            <div class="sidebar-button" onclick="clickshow('nav');">
+                <i class="iconfont pure-menu"></i>
+            </div>
         </div>
         <h3 class="author-title"><%= profile.author_title %></h3>
     </div>
 
-    <nav class="sidebar-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+    <nav id="nav" class="sidebar-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
         <ul class="menu-list">
             <% for (var i in theme.menu) { let itemName = i.toLowerCase(); %>
             <li class="menu-item">
