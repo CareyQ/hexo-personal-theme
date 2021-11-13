@@ -1,9 +1,12 @@
 ---
 title: CentOS 8 下手动编译 OpenJDK 12
 categories: Java 札记
+tag:
+    - Java
+    - Linux
+    - JDK
 date: 2021-04-20
 url: java-002
-desc: ，实践一遍后，就能够大致明白了 JDK 是怎么来的。
 ---
 
 ## 前言

@@ -1,6 +1,10 @@
 ---
 title: Windows 下安装 MySQL 5.7
 categories: 数据库札记
+tag:
+    - Windows
+    - MySQL
+    - 数据库
 date: 2021-05-03
 url: sql-001
 ---

@@ -1,6 +1,9 @@
 ---
 title: Spring（四）- 使用注解管理 Bean
 categories: Spring 学习
+tag:
+    - Spring
+    - Bean
 date: 2021-04-04
 url: spring-study-04
 ---

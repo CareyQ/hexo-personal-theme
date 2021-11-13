@@ -1,7 +1,9 @@
 ---
 title: 通过 MySQL 数据库文件恢复数据库
 categories: 数据库札记
-desc: ，重装系统忘了导出 SQL 备份，只有磁盘上的数据库文件，可以通过此方法进行恢复。
+tag:
+    - MySQL
+    - 数据库
 date: 2021-05-03
 url: sql-002
 ---

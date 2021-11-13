@@ -1,7 +1,9 @@
 ---
 title: 构建 Hexo 主题
 categories: 博客搭建
-desc: ，折腾了那么久的博客，自己撸一个主题是应该的吧，我的前端知识就是撸主题学会的。
+tag:
+    - Hexo
+    - EJS
 date: 2020-02-12
 url: blog-003
 toc: true

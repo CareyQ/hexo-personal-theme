@@ -1,5 +1,7 @@
 ---
 title: Nginx 禁止未绑定域名访问
+tag:
+    - Nginx
 categories: 博客搭建
 date: 2020-03-13
 url: blog-004

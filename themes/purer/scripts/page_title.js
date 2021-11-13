@@ -2,7 +2,7 @@ hexo.extend.helper.register('page_title', function (pg = null) {
     const page = (pg !== null) ? pg : this.page;
     let title = page.title;
     if (this.is_archive()) {
-        title = this.__('archive');
+        title = this.__('page.archive');
         if (this.is_month()) {
             title += `: ${page.year}/${page.month}`;
         } else if (this.is_year()) {

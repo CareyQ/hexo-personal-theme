@@ -1,7 +1,9 @@
 ---
 title: 重装系统后，恢复 MySQL
 categories: 数据库札记
-desc: ，整个 MySQL 文件都还在，仅仅服务丢失了，用此方法就能恢复。
+tag:
+    - MySQL
+    - 数据库
 date: 2021-05-27
 url: sql-003
 ---

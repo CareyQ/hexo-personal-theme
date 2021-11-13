@@ -1,6 +1,10 @@
 ---
 title: Spring（八）- JdbcTemplate 基本使用
 categories: Spring 学习
+tag:
+    - Spring
+    - JDBC
+    - 数据库
 date: 2021-04-08
 url: spring-study-08
 ---

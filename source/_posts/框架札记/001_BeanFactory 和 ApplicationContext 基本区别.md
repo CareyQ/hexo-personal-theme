@@ -1,7 +1,10 @@
 ---
 title: BeanFactory 和 ApplicationContext 基本区别
 categories: 框架札记
-desc: ，了解一波 Bean 的即时加载和延时加载。
+tag:
+    - Spring
+    - Java
+    - Bean
 date: 2021-05-06
 url: framework-001
 ---

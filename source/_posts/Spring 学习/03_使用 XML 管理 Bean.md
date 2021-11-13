@@ -1,6 +1,9 @@
 ---
 title: Spring（三）- 使用 XML 管理 Bean
 categories: Spring 学习
+tag:
+    - Spring
+    - Bean
 date: 2021-04-03
 url: spring-study-03
 ---

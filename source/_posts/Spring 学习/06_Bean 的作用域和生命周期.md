@@ -1,6 +1,9 @@
 ---
 title: Spring（六）- Bean 的作用域和生命周期
 categories: Spring 学习
+tag:
+    - Spring
+    - Bean
 date: 2021-04-06
 url: spring-study-06
 ---

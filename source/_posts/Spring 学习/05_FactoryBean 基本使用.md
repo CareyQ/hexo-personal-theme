@@ -1,6 +1,9 @@
 ---
 title: Spring（五）- FactoryBean 基本使用
 categories: Spring 学习
+tag:
+    - Spring
+    - Bean
 date: 2021-04-05
 url: spring-study-05
 ---

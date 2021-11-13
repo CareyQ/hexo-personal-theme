@@ -1,7 +1,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,33 +35,28 @@
         return html;
     }) %>
 
-    <% if (!is_home() && !is_category() && !is_tag() && !is_archive() && page.comments) { %>
-        <% if (theme.comment.type==='gitalk' ) { %>
-            <link href="<%= theme.cdn.gitalk %>" rel="stylesheet">
-        <% } %>
-        <% if (theme.fancybox) { %>
-            <link href="<%= theme.cdn.lightgallery_css %>" rel="stylesheet">
-        <% } %>
-    <% } %>
-
     <%- css('https://at.alicdn.com/t/font_2923051_ryb39t24hhd.css') %>
     <%- css('/css/common.css') %>
 
-    <% if(theme.site.google_analytics) { %>
     <script>
-        (function(e, t, n, i, s, a, c) {
-            e[n] = e[n] || function() {
-                (e[n].q = e[n].q || []).push(arguments)
-            };
-            a = t.createElement(i);
-            c = t.getElementsByTagName(i)[0];
-            a.async = true;
-            a.src = s;
-            c.parentNode.insertBefore(a, c)
-        })(window, document, "galite", "script", "https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
-
-        galite('create', '<%= theme.site.google_analytics %>', 'auto');
-        galite('send', 'pageview');
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6482153324bc83f534e2d3559d479b7e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
-    <% } %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-68VW5SYR36"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-68VW5SYR36');
+    </script>
 </head>

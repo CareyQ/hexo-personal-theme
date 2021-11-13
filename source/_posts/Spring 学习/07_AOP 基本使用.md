@@ -1,6 +1,10 @@
 ---
 title: Spring（七）- AOP 基本使用AOP 基本使用
 categories: Spring 学习
+tag:
+    - Spring
+    - AOP
+    - 切面
 date: 2021-04-07
 url: spring-study-07
 ---

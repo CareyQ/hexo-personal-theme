@@ -1,6 +1,9 @@
 ---
 title: Spring（二）- IoC 初识
 categories: Spring 学习
+tag:
+    - Spring
+    - 控制反转
 date: 2021-04-02
 url: spring-study-02
 ---
