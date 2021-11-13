@@ -4,20 +4,33 @@
 </div>
 
 <div class="page-content site-content">
-    <% for (let index in site.data.sites) { %>
-        <% let item = site.data.sites[index]; %>
-        <div class="site-item">
-            <div class="site-left">
-                <a href="<%= item.url %>" target="_blank" class="site-url">
+    <%
+        let tools = site.data.sites.tools;
+        let blogs = site.data.sites.blogs; 
+    %>
+    <div class="site-row">
+        <div class="site-cloum site-tools">
+            <h2 class="site-title">资源工具</h2>
+            <% for (let index in tools) { %>
+                <% let item = tools[index]; %>
+                <div class="site-item">
                     <img src="<%= item.logo %>" alt="<%= item.title %>">
-                </a>
-            </div>
-            <div class="site-body">
-                <h4 class="site-title">
                     <a href="<%= item.url %>" target="_blank"><%= item.title %></a>
-                </h4>
-                <p class="text-muted"><%= item.desc %></p>
-            </div>
+                </div>
+            <% } %>
         </div>
-    <% } %>
+    
+        <div class="site-cloum site-blogs">
+            <h2 class="site-title">优质博客</h2>
+            <% for (let index in blogs) { %>
+                <% let item = blogs[index]; %>
+                <div class="site-item">
+                    <img src="<%= item.logo %>" alt="<%= item.title %>">
+                    <a href="<%= item.url %>" target="_blank"><%= item.title %></a>
+                </div>
+            <% } %>
+        </div>
+    </div>
 </div>
+
+<%- partial('common/comment') %>

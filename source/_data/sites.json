@@ -1,86 +1,71 @@
-[
-    {
-        "logo": "https://www.ghxi.com/wp-content/uploads/2019/12/2020logo.png",
-        "url": "https://www.ghxi.com/",
-        "title": "果核剥壳",
-        "desc": "还原软件的本质"
-    },
-    {
-        "logo": "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/img/logo.png",
-        "url": "https://www.code-nav.cn/",
-        "title": "编程导航",
-        "desc": "发现优质编程学习资源"
-    },
-    {
-        "logo": "https://file.ipadown.com/tophub/assets/images/logo.png",
-        "url": "https://tophub.today/",
-        "title": "今日热搜",
-        "desc": "找到每日各大平台热门文章资源"
-    },
-    {
-        "logo": "https://www.javaweb.shop/images/logo/logo.png",
-        "url": "https://www.javaweb.shop/",
-        "title": "Java 菜市场",
-        "desc": "专注于技术干货的免费分享"
-    },
-    {
-        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAAbCAMAAABx0eCZAAAAn1BMVEX///8mJibKDBYAAAAiIiLIAAAbGxsSEhIYGBgeHh5HR0cWFhYLCwsPDw++vr7MzMzJAAqCgoI8PDyioqKcnJzx8fGurq7f3983NzctLS34+PhdXV2Li4tvb2/T09NnZ2eUlJRQUFDy0tLMICfQPkHrurt4eHj78/PYamzONDjvysvo6Ojgj5DeiIrRR0rnqqvUWlz35OXadnfknZ7SUFM7qM9BAAAECUlEQVRIiY1XiXaqQAxFw86A4gLIJtRqtWptff7/t73ZCUvfeTmnp3QCcyc3yc3UMHr29rifvw7z+fzw/v38c/xBrjRKmvh0OsVxuUmieiuXt2laL5jV6daYtGsdJZumjMsmidIJ/8fjy6K2XM65LenzRfmiPQBxXNv2bNt2A4cAANtjAdwIIfy3Hyc98EWz3zG3E7jqs33UR/05U8h536yn8DVAvNnQ4MrOQ3prpkvARxsXxDMHn3kwW6BYKep8ZNaN+WrXGYEyXOZbj10m2tgfoooX1sp/7KMuJdfWkYUE+mPTdl3bEyGYGfuwdIWDGdq4kfvu0CI6AkhKbhqVJdU6XC6XOXuwPmlVgHqbQFvF8WnfrkKaMtizLyubu3a+769sAFdtvBEby28dAC/LqF9ly+nDLq3D7fNDUf/2OP/onWliUN7yNCrXHZE81XR1EYN8G2q2sBW4zmYr/QVBAR8VrHX4HFe5SqDce2ACBnQR54V43/TZXymgQ3ArhduOaVwa9jyxca5oDqdgJZEuWim8DmshcVHXioybrWE8Ja71mtxZpcw9TQQsiBQl1luaBaWhuwzyzh3LgkDhfgx3FcyEEtiGLI4GkiSIZKfvbO9pomWXAfI2gdhNZ3eSZWarQLcCVYVVibpeEmlX+H0BZu7YmYMRHbHgL+toPv6CmxeAWs8MwI014wnRnBr9tZlHH0+cVK9AXpF+ytC7FEcLz4C+RZlqD2EBnGTGNjw2Z43fTnhizBl9bDmIfULejMfgVYbWxN9xKZ8VgQBFHbgpYo30pF5k0FxpkKBBXpE0t+xw3/6By6AbH2GbDo9Y1BDglEsp4TkXjIdJ51RKsu54fvwbl1peNys1fxwexMoc9qdRgwaTIJgOqSRhpOtqeTH+x9QA4jxK2cD9qUYBk7d0LBtKSRbGp+7f+//gyhhE3UgxCxAlvqhAe49AUNPLYmdHQVM+H6IYo5WNjJc3x3UoV1EgJw5Xc1HZPdmQn7Oj6IDp6LvraUTH0R+DZWu/XnTnvcZKriExVC6VXNWbnfbyzpLa5CBcKRv8KPdu5tORO39/vV7vBzaGWQDEo8OT+AW9zsX0rqTUmsuR0l9z57dtBuCoaoeYgwjZ6KmonBqeMQAWlw1+3Vh+GbqMTI/fNHQHe2IqSiJ/u24IkJ6K+iY+ynHycnXueBkYyYRSNsHYZ0Kmxq2UDayi4h19lPw+cZlk9d2O7202aF082QMfTUrWdWvoMR4IUtEcODVhd5T88bLE7Zkbe2R1FVXs9mvzDSjZAb0AV93Grbw7h2HIL9CkWKNe3WY+sxWSjetOLCEFM9g/C7fn9xe17/Pz9lC6eY3WcVW0bVtU8Xp44b/SfxaiKEroT52O2/B3+wsG60PQAQjLOwAAAABJRU5ErkJggg==",
-        "url": "https://blog.csdn.net/rank/list/content",
-        "title": "CSDN 排行榜",
-        "desc": "各类技术文章排行榜"
-    },
-    {
-        "logo": "https://cdn.iiong.com/2021/01/site-logo.svg",
-        "url": "https://iiong.com/",
-        "title": "淮城一只猫",
-        "desc": "永远年轻，永远热泪盈眶！"
-    },
-    {
-        "logo": "https://www.javaboy.org/images/sb/javaboy.jpg",
-        "url": "http://www.javaboy.org/",
-        "title": "江南一点雨",
-        "desc": "非常多的 Java 相关技术文章"
-    },
-    {
-        "logo": "https://www.logicbig.com/images/title-icon.ico",
-        "url": "https://www.logicbig.com/",
-        "title": "LogicBig",
-        "desc": "国外一个关于 Java 教程的网站"
-    },
-    {
-        "logo": "http://www.ityouknow.com/assets/images/favicon.ico",
-        "url": "http://www.ityouknow.com/",
-        "title": "纯洁的微笑",
-        "desc": "涉及了 Java、Python 等技术的日常博客"
-    },
-    {
-        "logo": "https://bugstack.cn/favicon.ico",
-        "url": "https://bugstack.cn/",
-        "title": "bugstack 虫洞栈",
-        "desc": "重学设计模式、字节码编程、中间件、Spring、Java基础"
-    },
-    {
-        "logo": "https://assets.javadoop.com/imgs/20510079/default/favor.ico",
-        "url": "https://javadoop.com/",
-        "title": "Javadoop",
-        "desc": "貌似有段时间未更新了，但是已有文章内容质量非常高"
-    },
-    {
-        "logo": "https://rawchen.com/logo.png",
-        "url": "https://rawchen.com/",
-        "title": "RawChen",
-        "desc": "大道至简 大简至极"
-    },
-    {
-        "logo": "https://www.cmsblogs.com/images/website/info/logo.png",
-        "url": "https://www.cmsblogs.com/",
-        "title": "Java 技术驿站",
-        "desc": "做最牛逼的 Javaer"
-    },
-    {
-        "logo": "https://www.cmsblogs.com/images/website/info/logo.png",
-        "url": "https://www.iocoder.cn/",
-        "title": "芋道源码",
-        "desc": "Java 超多内容，从源码入手"
-    }
-]
+{
+    "tools": [
+        {
+            "logo": "https://www.ghxi.com/favicon.ico",
+            "url": "https://www.ghxi.com/",
+            "title": "果核剥壳"
+        },
+        {
+            "logo": "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/img/logo.png",
+            "url": "https://www.code-nav.cn/",
+            "title": "编程导航"
+        },
+        {
+            "logo": "https://file.ipadown.com/tophub/assets/images/logo.png",
+            "url": "https://tophub.today/",
+            "title": "今日热搜"
+        },
+        {
+            "logo": "https://g.csdnimg.cn/static/logo/favicon32.ico",
+            "url": "https://blog.csdn.net/rank/list/content",
+            "title": "CSDN 排行榜"
+        }
+    ],
+    "blogs": [
+        {
+            "logo": "https://iiong.com/favicon.ico",
+            "url": "https://iiong.com/",
+            "title": "淮城一只猫"
+        },
+        {
+            "logo": "https://www.javaboy.org/favicon.ico",
+            "url": "http://www.javaboy.org/",
+            "title": "江南一点雨"
+        },
+        {
+            "logo": "https://www.logicbig.com/images/title-icon.ico",
+            "url": "https://www.logicbig.com/",
+            "title": "LogicBig"
+        },
+        {
+            "logo": "http://www.ityouknow.com/assets/images/favicon.ico",
+            "url": "http://www.ityouknow.com/",
+            "title": "纯洁的微笑"
+        },
+        {
+            "logo": "https://bugstack.cn/favicon.ico",
+            "url": "https://bugstack.cn/",
+            "title": "bugstack 虫洞栈"
+        },
+        {
+            "logo": "https://assets.javadoop.com/imgs/20510079/default/favor.ico",
+            "url": "https://javadoop.com/",
+            "title": "Javadoop"
+        },
+        {
+            "logo": "https://rawchen.com/favicon.ico",
+            "url": "https://rawchen.com/",
+            "title": "RawChen"
+        },
+        {
+            "logo": "https://www.cmsblogs.com/favicon.ico",
+            "url": "https://www.cmsblogs.com/",
+            "title": "Java 技术驿站"
+        },
+        {
+            "logo": "https://www.iocoder.cn/images/favicon.ico",
+            "url": "https://www.iocoder.cn/",
+            "title": "芋道源码"
+        }
+    ]
+}

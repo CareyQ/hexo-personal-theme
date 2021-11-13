@@ -61,4 +61,28 @@
             </div>
         </div>
     <% } %>
+
+    <% if (!is_home() && !is_archive()) { %>
+        <div class="widget widget-posts">
+            <div class="widget-title">
+                <img src="/images/icon/posts.svg" alt="最近文章">
+                <span>最近文章</span>
+            </div>
+            <div class="widget-content">
+                <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+                    <div class="widget-post-item">
+                        <p class="item-category">
+                            <%- list_categories(post.categories, {show_count: false, depth:2, class: 'category', style: 'none', separator: '<i class="iconfont pure-right"></i>'}) %>
+                        </p>
+                        <p class="item-title">
+                            <a href="<%- url_for((post.link ? post.link : post.path)) %>"><%= post.title || '(no title)' %></a>
+                        </p>
+                        <p class="item-date">
+                            <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
+                        </p>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    <% } %>
 </aside>

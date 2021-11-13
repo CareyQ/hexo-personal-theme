@@ -6,7 +6,7 @@
             <a class="title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
         </h2>
         <p class="item-meta">
-            <%- partial('common/post/date', { date_format: 'YYYY-MM-DD HH:ss:mm', post: post }) %>
+            <%- partial('common/post/date', { date_format: 'YYYY-MM-DD', post: post }) %>
             <%- partial('common/post/category', { post: post }) %>
             <%- partial('common/post/wordcount', { post: post }) %>
         </p>
